@@ -230,13 +230,21 @@
     flex-direction: column;
     gap: 10px;
 }
+.photos-carousel .owl-item .image-item img {
+    width: 100%;
+}
+
+.photos-carousel .owl-item.active.center .image-item img{
+    width: 100%;
+}
 
 .image-item img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
     height: 100%;
     object-fit: cover;
 }
+
 
 @media only screen and (min-width: 768px) {
     .image-gallery {
@@ -328,33 +336,33 @@
 }
 
 
-/*** Testimonial ***/
-.testimonial-carousel .owl-item .testimonial-item {
+/*** photos ***/
+.photos-carousel .owl-item .photos-item {
     box-shadow: 0 0 45px rgba(0, 0, 0, .07);
     border: 1px solid transparent;
     transform: scale(.85);
     transition: .5s;
 }
 
-.testimonial-carousel .owl-item.center .testimonial-item {
+.photos-carousel .owl-item.center .photos-item {
     box-shadow: none;
     border-color: var(--primary);
-    transform: scale(1);
+    transform: scale(1.0);
 }
 
-.testimonial-carousel .owl-item .testimonial-item img {
+.photos-carousel .owl-item .photos-item img {
     width: 50px;
     height: 50px;
 }
 
-.testimonial-carousel .owl-nav {
+.photos-carousel .owl-nav {
     margin-top: 20px;
     display: flex;
     justify-content: center;
 }
 
-.testimonial-carousel .owl-nav .owl-prev,
-.testimonial-carousel .owl-nav .owl-next {
+.photos-carousel .owl-nav .owl-prev,
+.photos-carousel .owl-nav .owl-next {
     margin: 0 12px;
     width: 40px;
     height: 40px;
@@ -367,12 +375,15 @@
     transition: .5s;
 }
 
-.testimonial-carousel .owl-nav .owl-prev:hover,
-.testimonial-carousel .owl-nav .owl-next:hover {
+.photos-carousel .owl-nav .owl-prev:hover,
+.photos-carousel .owl-nav .owl-next:hover {
     color: #FFFFFF;
     background: var(--primary);
 }
 
+.owl-carousel div i,.owl-carousel div span{
+    color: #F3F6F8;
+}
 
 /*** Team ***/
 .team-item {
@@ -442,6 +453,15 @@
 .footer .footer-col.last {
     margin-right: 0;
     margin-left: auto;
+}
+.footer .footer-sm .social-links i{
+    font-size:3em;
+}
+.footer .footer-sm a{
+    color:rgba(28, 28, 28, 0.781);
+}
+.footer .footer-sm a:hover{
+    color: black;
 }
 
 /* end of footer */
