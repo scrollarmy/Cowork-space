@@ -5,6 +5,9 @@
     --dark: #0e2e50;
 }
 
+.shadow-box-global{
+    box-shadow: 0px 10px 6px 15px rgba(0,0,0,.07);
+}
 
 /*** Spinner ***/
 #spinner {
