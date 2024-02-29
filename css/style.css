@@ -297,13 +297,15 @@
     padding: 5px;
     overflow: hidden;
     color: #FFFFFF;
-    background-color: #FF9700;
+    background-color: var(--primary);
+    transition: background-color 0.5s ease 0s;
+    border-radius: 0 10px;
 }
 
 .service-box:hover{
     background-color: white;
-    border: 2px solid #FF9700;
-    color: #FF9700;
+    border: 2px solid var(--primary);
+    color: var(--primary);
 }
 
 
@@ -323,6 +325,7 @@
     background: var(--primary);
     border-radius: 5px 0;
     transition: .5s;
+    transition: opacity 0.5s ease 0s;
 }
 
 .service-item .service-btn {
@@ -335,6 +338,10 @@
     opacity: 1;
 }
 
+.service-item span {
+    display: inline-block;
+    min-height: 125px;
+}
 
 /*** photos ***/
 .photos-carousel .owl-item .photos-item {
